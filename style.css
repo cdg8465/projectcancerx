@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.dropbtn {
+  cursor: pointer;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 30px;
+  height: 60px;
+  border-radius: 80px;
+  line-height: 60px;
+  text-align: center;
+  border: 3px solid #009688;
+  display: block;
+  text-decoration: none;
+  margin: 10px auto;
+  color: #009688;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+}
+
+.dropbtn:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #009688;
+  opacity: .5;
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+
+.dropbtn:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #009688;
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+  transition-delay: .2s;
+}
+
+.dropbtn:hover:before {
+  top: 0;
+}
+
+.dropbtn:hover:after {
+  top: 0;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+label {
+  font-family: arial;
+  color: #009688;
+  font-size: 20px;
+}
+
+body {
+  font-family: arial;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #009688;
+}
+
+.show {display:block;}
+
+.btn {
+  cursor: pointer;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 30px;
+  height: 60px;
+  border-radius: 80px;
+  line-height: 60px;
+  text-align: center;
+  border: 3px solid #009688;
+  display: block;
+  text-decoration: none;
+  margin: 10px auto;
+  color: #009688;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+}
+
+.btn:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #009688;
+  opacity: .5;
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+
+.btn:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #009688;
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+  transition-delay: .2s;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:hover:before {
+  top: 0;
+}
+
+.btn:hover:after {
+  top: 0;
+}

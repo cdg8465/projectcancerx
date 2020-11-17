@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Share Project</title>
+  </head>
+  <h1>Share Project</h1>
+  <div class="container">
+
+    <form action="home.html" method="post">
+      <label for="emailto">Email to: </label>
+      <input type="text" placeholder="ex1@gmail.com, ex2@gmail.com" name="emailto" required><br>
+      <input type="checkbox" id="proj1" class="proj" value="Example Project 1">
+      <label for="proj1">Example Project 1</label><br>
+      <input type="checkbox" id="proj2" class="proj" value="Example Project 2">
+      <label for="proj2">Example Project 2</label><br>
+      <input type="checkbox" id="proj3" class="proj" value="Example Project 3">
+      <label for="proj3">Example Project 3</label><br>
+      <button class="btn" type="submit">Share</button>
+      <button class="btn" onclick="location.href='home.html'">Go back</button>
+    </form>
+
+  </div>
+</html>

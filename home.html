@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Project Cancer X</title>
+  </head>
+  <h1>Home</h1>
+  <body>
+    <div class="container">
+      <button class="btn" onclick="location.href='accmgmt.html'">Account Management</button>
+      <button class="btn" onclick="location.href='orgsupport.html'">Organization Support</button>
+      <button class="btn" onclick="location.href='share.html'">Share Discoveries</button>
+      <button class="btn" onclick="location.href='newproj.html'">Start New Project</button>
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>
+      <button onclick="myFunction()" class="dropbtn">Open Existing Project</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="proj.html">Example Project 1</a>
+        <a href="proj.html">Example Project 2</a>
+        <a href="proj.html">Example Project 3</a>
+      </div>
+      <button class="btn" onclick="location.href='privs.html'">Change Privileges</button>
+      <button class="btn" onclick="location.href='index.html'">Logout</button>
+    </div>
+  </body>
+</html>

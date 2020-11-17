@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Organization Support</title>
+  </head>
+  <h1>Organization Support</h1>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+  <input type="checkbox" id="org1" class="org" value="Example Organization 1">
+  <label for="org1">Example Organization 1</label><br>
+  <input type="checkbox" id="org2" class="org" value="Example Organization 2">
+  <label for="org2">Example Organization 2</label><br>
+  <input type="checkbox" id="org3" class="org" value="Example Organization 3">
+  <label for="org3">Example Organization 3</label><br>
+  <button onclick="location.href='home.html'" class="btn">Request Support</button>
+  <button onclick="location.href='home.html'" class="btn">Go back</button>
+</html>
